@@ -25,7 +25,7 @@ from bs4 import BeautifulSoup
 
 options = webdriver.EdgeOptions()
 
-driver = webdriver.Edge('./msedgedriver.exe')
+driver = webdriver.Edge('./msedgedriver.exe') # 동일한 폴더에 edge 드라이버 사용
 cnt = 0
 for i in range(1,296):
     driver.get(f'제품 주소 리뷰 인덱스={i}') # 원래는 사이트 주소가 있지만 고소미 먹을까봐 가림
